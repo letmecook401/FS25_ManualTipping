@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="105">
+    <author>Let me cook</author>
+    <version>2.0.0.0</version>
+
+    <title>
+        <en>Manual Tipping</en>
+        <pl>Ręczne Wyładowywanie</pl>
+        <de>Manuelles Kippen</de>
+        <fr>Déchargement Manuel</fr>
+    </title>
+
+    <description>
+        <en><![CDATA[
+This mod adds manual control over trailer, semi-trailer and tipper hydraulics.
+
+In the base game, trailers can be unloaded manually, but they always lift to the maximum position. This can cause issues in low garages or confined spaces.
+With this mod, you can stop the lifting process at any desired position.
+
+If the trailer supports separate animations for the rear door or side panels, you can raise the trailer without unloading its contents. The material will only unload once the doors or panels are opened.
+
+The mod includes full multiplayer support — all animations are fully synchronized on the server.
+
+Default Controls
+- Select lift/lower direction – Left ALT
+- Activate hydraulics (hold to lift/lower) – Right CTRL
+- Open/unlock rear door or flap – O
+
+All key bindings can be changed in the game settings.
+
+If you encounter any issues, please report them by repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.0.0
+- separated animation for trailer and back doors (if exists)
+- added ability to control back door animation
+- removed modification from trailers that are not compatibile
+- added full support for multiplayer
+
+Changelog 1.0.1.2
+- fixed auger wagons error
+- changes binding to "lift/lower" trailer
+- updated modDesc version
+
+Changelog 1.0.0.2
+- fixed manual tipping to silo
+
+Changelog 1.0.0.1
+- fixed modDesc version
+]]></en>
+        <pl><![CDATA[
+Mod umożliwia ręczne sterowanie hydrauliką przyczep, naczep oraz wywrotek.
+
+W podstawowej wersji gry przyczepa podczas wysypywania zawsze podnosi się do maksymalnej wysokości, co może powodować problemy w niskich garażach lub ograniczonych przestrzeniach.
+Dzięki tej modyfikacji możesz zatrzymać podnoszenie w dowolnym momencie.
+
+Jeśli przyczepa posiada oddzielne animacje tylnych drzwi lub burt, możliwe jest podniesienie skrzyni bez wysypywania zawartości. Wysypywanie nastąpi dopiero po otwarciu drzwi lub burt.
+
+Mod posiada pełne wsparcie trybu multiplayer — wszystkie animacje są synchronizowane na serwerze.
+
+Domyślne sterowanie:
+- Wybór kierunku podnoszenie/opuszczanie – Lewy ALT
+- Aktywacja hydrauliki (przytrzymanie klawisza) – Prawy CTRL
+- Otwórz/odblokuj tylne drzwi lub klapę – O
+
+Wszystkie przypisania klawiszy można zmienić w ustawieniach gry.
+
+W przypadku wystąpienia błędów proszę o ich zgłaszanie na adres repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.0.0
+- rozdzielono animacje przyczepy oraz tylnych drzwi/klap (jeśli są dostępne)
+- dodano możliwość sterowania animacją tylnych drzwi/klap
+- usunięto modyfikację z niekompatybilnych przyczep
+- dodano pełne wsparcie dla trybu multiplayer
+
+Changelog 1.0.1.2
+- naprawiono błąd dotyczący wozów przeładowczych
+- zmieniono przypisanie klawiszy podnoszenia/opuszczania przyczepy
+- zaktualizowano wersję modDesc
+
+Changelog 1.0.0.2
+- naprawiono ręczne wysypywanie do silosów
+
+Changelog 1.0.0.1
+- poprawiono wersję modDesc
+]]></pl>
+        <de><![CDATA[
+Diese Modifikation ermöglicht die manuelle Steuerung der Hydraulik von Anhängern, Aufliegern und Kippern.
+
+Im Basisspiel wird der Anhänger beim Entladen immer vollständig angehoben. Dies kann in niedrigen Garagen oder engen Bereichen problematisch sein.
+Mit dieser Mod kann der Hebevorgang in jeder gewünschten Position gestoppt werden.
+
+Unterstützt der Anhänger separate Animationen für Heckklappe oder Seitenwände, kann der Aufbau angehoben werden, ohne das Ladegut zu entladen. Das Entladen erfolgt erst nach dem Öffnen der Klappen oder Seitenwände.
+
+Die Mod unterstützt den Multiplayer vollständig — alle Animationen werden serverseitig synchronisiert.
+
+Standardsteuerung
+- Hubrichtung wählen (Heben/Senken) – Linke ALT
+- Hydraulik aktivieren (Taste gedrückt halten) – Rechte STRG
+- Heckklappe öffnen/entriegeln – O
+
+Alle Tastenbelegungen können in den Spieleinstellungen geändert werden.
+
+Sollten Fehler auftreten, melden Sie diese bitte per E-Mail repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.0.0
+- separate Animationen für Anhänger und Heckklappe hinzugefügt (falls unterstützt)
+- manuelle Steuerung der Heckklappen-Animation hinzugefügt
+- modifikation von inkompatiblen Anhängern entfernt
+- vollständige Multiplayer-Unterstützung hinzugefügt
+
+Changelog 1.0.1.2
+- fehler bei Überladewagen behoben
+- tastenbelegung für Heben/Senken des Anhängers angepasst
+- modDesc-Version aktualisiert
+
+Changelog 1.0.0.2
+- manuelles Entladen in Silos behoben
+
+Changelog 1.0.0.1
+- modDesc-Version korrigiert
+]]></de>
+        <fr><![CDATA[
+Cette modification permet le contrôle manuel de l’hydraulique des remorques, semi-remorques et bennes.
+
+Dans le jeu de base, la remorque se lève toujours complètement lors du déchargement, ce qui peut poser problème dans les garages bas ou les espaces restreints.
+Grâce à ce mod, vous pouvez arrêter le levage à la position souhaitée.
+
+Si la remorque dispose d’animations séparées pour la porte arrière ou les ridelles latérales, il est possible de lever la benne sans décharger le contenu. Le déchargement ne commence qu’après l’ouverture des portes ou des ridelles.
+
+Le mod est entièrement compatible multijoueur — toutes les animations sont synchronisées sur le serveur.
+
+Commandes par défaut
+- Sélectionner lever/abaisser – ALT gauche
+- Activer l’hydraulique (maintenir la touche) – CTRL droit
+- Ouvrir/déverrouiller la porte arrière – O
+
+Toutes les touches peuvent être modifiées dans les paramètres du jeu.
+
+Sollten Fehler auftreten, melden Sie diese bitte per E-Mail repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.0.0
+- séparation des animations de la remorque et de la porte arrière (si disponible)
+- ajout du contrôle manuel de l’animation de la porte arrière
+- suppression de la modification sur les remorques incompatibles
+- ajout du support complet du multijoueur
+
+Changelog 1.0.1.2
+- correction de l’erreur concernant les chariots de transbordement
+- modification des touches pour lever/abaisser la remorque
+- mise à jour de la version modDesc
+
+Changelog 1.0.0.2
+- correction du déchargement manuel dans les silos
+
+Changelog 1.0.0.1
+- correction de la version modDesc
+]]></fr>
+    </description>
+
+    <iconFilename>icon_manualTipping.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <l10n>
+        <text name="input_MANUAL_TIPPING_DOWN">
+            <en>Lower trailer</en>
+            <pl>Opuść przyczepę</pl>
+            <de>Anhänger absenken</de>
+            <fr>Abaisser la remorque</fr>
+        </text>
+
+        <text name="input_MANUAL_TIPPING_UP">
+            <en>Raise trailer</en>
+            <pl>Podnieś przyczepę</pl>
+            <de>Anhänger anheben</de>
+            <fr>Relever la remorque</fr>
+        </text>
+
+        <text name="action_MANUAL_TIPPING_UP">
+            <en>Start lifting</en>
+            <pl>Rozpocznij podnoszenie</pl>
+            <de>Anheben starten</de>
+            <fr>Démarrer le levage</fr>
+        </text>
+
+        <text name="action_MANUAL_TIPPING_DOWN">
+            <en>Start lowering</en>
+            <pl>Rozpocznij opuszczanie</pl>
+            <de>Absenken starten</de>
+            <fr>Démarrer l’abaissement</fr>
+        </text>
+
+        <text name="input_MANUAL_TIPPING_OPEN">
+            <en>Open/close rear door</en>
+            <pl>Otwórz/zamknij tylną klapę</pl>
+            <de>Heckklappe öffnen/schließen</de>
+            <fr>Ouvrir/fermer la porte arrière</fr>
+        </text>
+
+        <text name="action_MANUAL_TIPPING_OPEN">
+            <en>Open side panels</en>
+            <pl>Otwórz burty boczne</pl>
+            <de>Seitenwände öffnen</de>
+            <fr>Ouvrir les ridelles latérales</fr>
+        </text>
+
+        <text name="action_MANUAL_TIPPING_CLOSE">
+            <en>Close side panels</en>
+            <pl>Zamknij burty boczne</pl>
+            <de>Seitenwände schließen</de>
+            <fr>Fermer les ridelles latérales</fr>
+        </text>
+
+        <text name="warning_PRESSURE_RAISE">
+            <en>Wait until pressure builds up</en>
+            <pl>Poczekaj, aż wzrośnie ciśnienie</pl>
+            <de>Warten, bis sich Druck aufbaut</de>
+            <fr>Attendez que la pression augmente</fr>
+        </text>
+
+        <text name="warning_ENGINE_ENABLED">
+            <en>Start the engine first</en>
+            <pl>Najpierw uruchom silnik</pl>
+            <de>Motor zuerst starten</de>
+            <fr>Démarrez d’abord le moteur</fr>
+        </text>
+
+        <text name="warning_DETACH_RAISED">
+            <en>Lower the trailer before detaching</en>
+            <pl>Opuść przyczepę przed odłączeniem</pl>
+            <de>Anhänger vor dem Abkoppeln absenken</de>
+            <fr>Abaissez la remorque avant de la détacher</fr>
+        </text>
+
+        <text name="warning_MANUAL_ENGINE_TURN_OFF">
+            <en>Lower the trailer before turning off the engine</en>
+            <pl>Opuść przyczepę przed wyłączeniem silnika</pl>
+            <de>Anhänger vor dem Abstellen des Motors absenken</de>
+            <fr>Abaissez la remorque avant d’éteindre le moteur</fr>
+        </text>
+    </l10n>
+
+    <actions>
+        <action name="MANUAL_TIPPING_DOWN" category="VEHICLE" />
+        <action name="MANUAL_TIPPING_UP" category="VEHICLE" />
+        <action name="MANUAL_TIPPING_OPEN" category="VEHICLE" />
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="MANUAL_TIPPING_DOWN">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt" axisComponent="+"
+                neutralInput="0" index="1" />
+        </actionBinding>
+        <actionBinding action="MANUAL_TIPPING_UP">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_rctrl" axisComponent="+"
+                neutralInput="0" index="1" />
+        </actionBinding>
+        <actionBinding action="MANUAL_TIPPING_OPEN">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_o" axisComponent="+"
+                neutralInput="0" index="1" />
+        </actionBinding>
+    </inputBinding>
+
+    <extraSourceFiles>
+        <sourceFile filename="src/RegisterSpecialization.lua" />
+        <sourceFile filename="src/ManualTippingOverwrites.lua" />
+        <sourceFile filename="src/ManualTippingEvent.lua" />
+        <sourceFile filename="src/ManualTippingDoorEvent.lua" />
+    </extraSourceFiles>
+
+    <registerSpecializations>
+        <registerSpecialization name="manualTipping" className="ManualTipping"
+            filename="src/ManualTipping.lua" searchedSpecializations="trailer" />
+    </registerSpecializations>
+</modDesc>
