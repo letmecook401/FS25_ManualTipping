@@ -32,7 +32,7 @@ end
 function ManualTipping:onLoad(savegame)
     local spec = self.spec_manualTipping
 
-    spec.isValid = true
+    spec.isValid = false
     spec.isTipping = false
     spec.isTippingOpen = false
 
@@ -57,6 +57,21 @@ function ManualTipping:onLoad(savegame)
     spec.syncedAnimTime = 0
     spec.syncedDoorTime = 0
 
+    local trailerSpec = self.spec_trailer
+    if trailerSpec == nil or trailerSpec.tipSideCount < 1 then
+        return
+    end
+
+    local tipSide = trailerSpec.tipSides[trailerSpec.preferedTipSideIndex]
+    if tipSide == nil or tipSide.animation == nil or tipSide.animation.name == nil then
+        return
+    end
+
+    if tipSide.manualTipToggle or (tipSide.tippingAnimation ~= nil and tipSide.tippingAnimation.name ~= nil) then
+        return
+    end
+
+    spec.isValid = true
 end
 
 function ManualTipping:onUpdate(dt, isActiveForInput, isActiveForInputIgnoreSelection, isSelected)

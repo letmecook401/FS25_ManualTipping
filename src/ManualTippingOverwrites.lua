@@ -36,7 +36,7 @@ Trailer.onDischargeStateChanged = Utils.overwrittenFunction(Trailer.onDischargeS
         local spec = self.spec_manualTipping
 
         if spec == nil or not spec.isValid then
-            return superFunc(self, ...)
+            return superFunc(self, dischargeState, ...)
         end
 
         if spec.isTipping or spec.isTippingOpen then
