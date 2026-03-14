@@ -39,17 +39,23 @@ Trailer.onDischargeStateChanged = Utils.overwrittenFunction(Trailer.onDischargeS
             return superFunc(self, dischargeState, ...)
         end
 
+        local rootVehicle = self:getRootVehicle()
+        if rootVehicle ~= nil and rootVehicle:getIsAIActive() then
+            return superFunc(self, dischargeState, ...)
+        end
+
         if spec.isTipping or spec.isTippingOpen then
             return
         end
 
-        return superFunc(self, ...)
+        return superFunc(self, dischargeState, ...)
     end)
 
 -- if trailer is lifted or door open block any vanilla behaviour
 Trailer.onFillUnitFillLevelChanged = Utils.overwrittenFunction(Trailer.onFillUnitFillLevelChanged,
     function(self, superFunc, ...)
         local spec = self.spec_manualTipping
+
         if spec == nil or not spec.isValid then
             return superFunc(self, ...)
         end

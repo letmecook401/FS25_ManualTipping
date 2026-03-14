@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="105">
     <author>Let me cook</author>
-    <version>2.0.0.0</version>
+    <version>2.0.2.0</version>
 
     <title>
         <en>Manual Tipping</en>
@@ -29,6 +29,10 @@ Default Controls
 All key bindings can be changed in the game settings.
 
 If you encounter any issues, please report them by repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.2.0
+- fixed tipping animation issue with mixer wagons
+- fixed unloading issue when controlled by AI workers
 
 Changelog 2.0.0.0
 - separated animation for trailer and back doors (if exists)
@@ -66,6 +70,10 @@ Wszystkie przypisania klawiszy można zmienić w ustawieniach gry.
 
 W przypadku wystąpienia błędów proszę o ich zgłaszanie na adres repo: github.com/letmecook401/FS25_ManualTipping
 
+Changelog 2.0.2.0
+- naprawiono problem z animacją wysypywania w paszowozach
+- naprawiono problem z wysypywaniem podczas pracy pracowników AI
+
 Changelog 2.0.0.0
 - rozdzielono animacje przyczepy oraz tylnych drzwi/klap (jeśli są dostępne)
 - dodano możliwość sterowania animacją tylnych drzwi/klap
@@ -102,6 +110,10 @@ Alle Tastenbelegungen können in den Spieleinstellungen geändert werden.
 
 Sollten Fehler auftreten, melden Sie diese bitte per E-Mail repo: github.com/letmecook401/FS25_ManualTipping
 
+Changelog 2.0.2.0
+- problem mit der Kipp-Animation bei Futtermischwagen behoben
+- problem beim Entladen durch KI-Helfer behoben
+
 Changelog 2.0.0.0
 - separate Animationen für Anhänger und Heckklappe hinzugefügt (falls unterstützt)
 - manuelle Steuerung der Heckklappen-Animation hinzugefügt
@@ -137,6 +149,10 @@ Commandes par défaut
 Toutes les touches peuvent être modifiées dans les paramètres du jeu.
 
 Sollten Fehler auftreten, melden Sie diese bitte per E-Mail repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.2.0
+- correction du problème d’animation de basculement avec les mélangeuses
+- correction du problème de déchargement lors de l’utilisation des ouvriers IA
 
 Changelog 2.0.0.0
 - séparation des animations de la remorque et de la porte arrière (si disponible)

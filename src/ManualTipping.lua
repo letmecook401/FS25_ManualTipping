@@ -113,11 +113,11 @@ function ManualTipping:onUpdate(dt, isActiveForInput, isActiveForInputIgnoreSele
         end
     end
 
-    local rootVehicle = trailerSpec:getRootVehicle()
-    if rootVehicle ~= nil and rootVehicle.spec_motorized ~= nil then
-        if rootVehicle:getIsMotorStarted() then
-            rootVehicle.spec_motorized.stopMotorOnLeave = not (spec.isTipping and
-                                                              g_currentMission.missionInfo.automaticMotorStartEnabled)
+    local tractorVehicle = trailerSpec:getRootVehicle()
+    if tractorVehicle ~= nil and tractorVehicle.spec_motorized ~= nil then
+        if tractorVehicle:getIsMotorStarted() then
+            tractorVehicle.spec_motorized.stopMotorOnLeave = not (spec.isTipping and
+                                                                 g_currentMission.missionInfo.automaticMotorStartEnabled)
         end
     end
 
