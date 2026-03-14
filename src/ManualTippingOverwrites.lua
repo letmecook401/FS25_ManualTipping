@@ -39,6 +39,10 @@ Trailer.onDischargeStateChanged = Utils.overwrittenFunction(Trailer.onDischargeS
             return superFunc(self, dischargeState, ...)
         end
 
+        if dischargeState == Dischargeable.DISCHARGE_STATE_OFF then
+            return superFunc(self, dischargeState, ...)
+        end
+
         local rootVehicle = self:getRootVehicle()
         if rootVehicle ~= nil and rootVehicle:getIsAIActive() then
             return superFunc(self, dischargeState, ...)

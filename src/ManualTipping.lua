@@ -122,12 +122,17 @@ function ManualTipping:onUpdate(dt, isActiveForInput, isActiveForInputIgnoreSele
     end
 
     -- discharge logic
-    local canDischarge = spec.isTipping and (not ManualTipping.hasDoorAnimation(tipSide) or spec.isTippingOpen)
+    local rootVehicle = self:getRootVehicle()
+    local isAIActive = rootVehicle ~= nil and rootVehicle:getIsAIActive()
 
-    if canDischarge then
-        ManualTipping.startDischarging(spec, self)
-    else
-        ManualTipping.stopDischarging(spec, self)
+    if not isAIActive then
+        local canDischarge = spec.isTipping and (not ManualTipping.hasDoorAnimation(tipSide) or spec.isTippingOpen)
+
+        if canDischarge then
+            ManualTipping.startDischarging(spec, self)
+        else
+            ManualTipping.stopDischarging(spec, self)
+        end
     end
 end
 
