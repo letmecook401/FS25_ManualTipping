@@ -8,7 +8,7 @@ Version:	2.6
 RegisterSpecialization.currentModDirectory = g_currentModDirectory;
 
 local allowedVehicleTypes = {"loaderVehicle", "trailer", "hookLiftContainerTrailer", "stonePicker", "tippingAugerWagon",
-                             "forageWagon", "baseTipper", "trailerLiftableAxle"}
+                             "forageWagon", "baseTipper", "trailerLiftableAxle", "carFillable"}
 
 function RegisterSpecialization:addSpecializations()
     local modDesc = loadXMLFile("modDesc", RegisterSpecialization.currentModDirectory .. "modDesc.xml");
