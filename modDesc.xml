@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="105">
+<modDesc descVersion="107">
     <author>Let me cook</author>
-    <version>2.0.2.0</version>
+    <version>2.0.2.1</version>
 
     <title>
         <en>Manual Tipping</en>
@@ -29,6 +29,9 @@ Default Controls
 All key bindings can be changed in the game settings.
 
 If you encounter any issues, please report them by repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.2.1
+- fixed reported issues
 
 Changelog 2.0.2.0
 - fixed tipping animation issue with mixer wagons
@@ -70,6 +73,9 @@ Wszystkie przypisania klawiszy można zmienić w ustawieniach gry.
 
 W przypadku wystąpienia błędów proszę o ich zgłaszanie na adres repo: github.com/letmecook401/FS25_ManualTipping
 
+Changelog 2.0.2.1
+- naprawiono zgłoszone błędy
+
 Changelog 2.0.2.0
 - naprawiono problem z animacją wysypywania w paszowozach
 - naprawiono problem z wysypywaniem podczas pracy pracowników AI
@@ -110,6 +116,9 @@ Alle Tastenbelegungen können in den Spieleinstellungen geändert werden.
 
 Sollten Fehler auftreten, melden Sie diese bitte per E-Mail repo: github.com/letmecook401/FS25_ManualTipping
 
+Changelog 2.0.2.1
+- gemeldete Fehler behoben
+
 Changelog 2.0.2.0
 - problem mit der Kipp-Animation bei Futtermischwagen behoben
 - problem beim Entladen durch KI-Helfer behoben
@@ -149,6 +158,9 @@ Commandes par défaut
 Toutes les touches peuvent être modifiées dans les paramètres du jeu.
 
 Sollten Fehler auftreten, melden Sie diese bitte per E-Mail repo: github.com/letmecook401/FS25_ManualTipping
+
+Changelog 2.0.2.1
+- correction des problèmes signalés
 
 Changelog 2.0.2.0
 - correction du problème d’animation de basculement avec les mélangeuses
