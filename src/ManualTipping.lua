@@ -149,12 +149,12 @@ function ManualTipping:onRegisterActionEvents(isActiveForInput, isActiveForInput
         return
     end
 
-    if not self:getIsTipSideAvailable(trailerSpec.preferedTipSideIndex) and not spec.isTipping and
-        not spec.isTippingOpen then
+    if tipSide.manualTipToggle or tipSide.tippingAnimation.name ~= nil then
         return
     end
 
-    if not self:getIsTipSideAvailable(trailerSpec.preferedTipSideIndex) and not spec.isTipping then
+    if not self:getIsTipSideAvailable(trailerSpec.preferedTipSideIndex) and not spec.isTipping and
+        not spec.isTippingOpen then
         return
     end
 
