@@ -115,13 +115,11 @@ function ManualTippingHUD:draw()
     local root = self.tractorVehicle
     local activeVehicle = nil
 
-    -- check root vehicle itself first (carFillable trucks)
     local rootSpec = root.spec_manualTipping
     if rootSpec ~= nil and rootSpec.isValid then
         activeVehicle = root
     end
 
-    -- check selected implement
     if activeVehicle == nil then
         local selected = root:getSelectedVehicle()
         if selected ~= nil and selected ~= root and selected.rootVehicle == root then
@@ -220,23 +218,19 @@ function ManualTippingHUD:draw()
 
     local iconY = baseY
 
-    -- tip side icon
     local tipIcon = ManualTippingHUD.getTipSideIcon(tipSide, self.icons)
     self:renderIcon(tipIcon, baseX + padding, iconY, iconWidth, iconHeight)
 
-    -- door icon
     if hasDoor then
         local doorIcon = spec.isTippingOpen and self.icons.doorOpen or self.icons.doorClosed
         self:renderIcon(doorIcon, baseX + padding * 2 + iconWidth, iconY, iconWidth, iconHeight)
     end
 
-    -- trailer raised/lowered icon
     local trailerIcon = spec.isTipping and self.icons.trailerRaised or self.icons.trailerLowered
     local trailerX = baseX + padding * (hasDoor and 3 or 2) + iconWidth * (hasDoor and 2 or 1)
     self:renderIcon(trailerIcon, trailerX, iconY, iconWidth, iconHeight)
 end
 
--- hooks
 HUD.createDisplayComponents = Utils.appendedFunction(HUD.createDisplayComponents, function(self, uiScale)
     self.manualTippingHUD = ManualTippingHUD.new()
 end)

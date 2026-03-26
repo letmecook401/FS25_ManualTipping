@@ -105,6 +105,20 @@ Motorized.actionEventToggleMotorState = Utils.overwrittenFunction(Motorized.acti
         return superFunc(self, ...)
     end)
 
+-- block tip side switching when trailer is raised or door is open
+Trailer.getCanTogglePreferdTipSide = Utils.overwrittenFunction(Trailer.getCanTogglePreferdTipSide,
+    function(self, superFunc)
+        local spec = self.spec_manualTipping
+        if spec == nil or not spec.isValid then
+            return superFunc(self)
+        end
+
+        if spec.isTipping or spec.isTippingOpen then
+            return false
+        end
+        return superFunc(self)
+    end)
+
 -- prevent detaching trailer while tipping
 Attachable.isDetachAllowed = Utils.overwrittenFunction(Attachable.isDetachAllowed, function(self, superFunc, ...)
     if self.spec_manualTipping ~= nil and self.spec_manualTipping.isTipping then
