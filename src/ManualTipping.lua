@@ -134,6 +134,23 @@ function ManualTipping:onUpdate(dt, isActiveForInput, isActiveForInputIgnoreSele
             ManualTipping.stopDischarging(spec, self)
         end
     end
+
+    -- show tip context
+    if isActiveForInput and not isAIActive then
+        local dischargeNodeIndex = self:getCurrentDischargeNodeIndex()
+        local dischargeNode = self.spec_dischargeable.dischargeNodes[dischargeNodeIndex]
+        if dischargeNode ~= nil and self:getCanDischargeToObject(dischargeNode) then
+            local contextDisplay = g_currentMission.hud.contextActionDisplay
+            if contextDisplay ~= nil then
+                local fillType = g_fillTypeManager:getFillTypeByIndex(self:getFillUnitFillType(
+                    dischargeNode.fillUnitIndex))
+                if fillType ~= nil then
+                    contextDisplay:setContext("MANUAL_TIPPING_UP", ContextActionDisplay.CONTEXT_ICON.TIP,
+                        fillType.title, 0, "")
+                end
+            end
+        end
+    end
 end
 
 function ManualTipping:onRegisterActionEvents(isActiveForInput, isActiveForInputIgnoreSelection)
@@ -405,29 +422,17 @@ function ManualTipping.startDischarging(spec, self)
     if self:getCanDischargeToObject(dischargeNode) then
         if self.spec_dischargeable.currentDischargeState ~= Dischargeable.DISCHARGE_STATE_OBJECT then
             self:setDischargeState(Dischargeable.DISCHARGE_STATE_OBJECT)
-
-            if self.isClient and tipSide.animationNodes ~= nil then
-                g_animationManager:startAnimations(tipSide.animationNodes)
-            end
         end
 
     elseif self:getCanDischargeToGround(dischargeNode) and self:getCanDischargeToLand(dischargeNode) and
         self:getCanDischargeAtPosition(dischargeNode) then
         if self.spec_dischargeable.currentDischargeState ~= Dischargeable.DISCHARGE_STATE_GROUND then
             self:setDischargeState(Dischargeable.DISCHARGE_STATE_GROUND)
-
-            if self.isClient and tipSide.animationNodes ~= nil then
-                g_animationManager:startAnimations(tipSide.animationNodes)
-            end
         end
 
     else
         if self.spec_dischargeable.currentDischargeState ~= Dischargeable.DISCHARGE_STATE_OFF then
             self:setDischargeState(Dischargeable.DISCHARGE_STATE_OFF)
-
-            if self.isClient and tipSide.animationNodes ~= nil then
-                g_animationManager:stopAnimations(tipSide.animationNodes)
-            end
         end
     end
 end
@@ -437,8 +442,5 @@ function ManualTipping.stopDischarging(spec, self)
 
     if self.spec_dischargeable.currentDischargeState ~= Dischargeable.DISCHARGE_STATE_OFF then
         self:setDischargeState(Dischargeable.DISCHARGE_STATE_OFF)
-        if self.isClient and tipSide ~= nil and tipSide.animationNodes ~= nil then
-            g_animationManager:stopAnimations(tipSide.animationNodes)
-        end
     end
 end

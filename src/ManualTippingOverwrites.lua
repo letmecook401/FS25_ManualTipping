@@ -20,16 +20,6 @@ Dischargeable.onRegisterActionEvents = Utils.overwrittenFunction(Dischargeable.o
         return
     end)
 
-Dischargeable.updateActionEvents = Utils.overwrittenFunction(Dischargeable.updateActionEvents,
-    function(self, superFunc, ...)
-        local spec = self.spec_manualTipping
-
-        if spec == nil or not spec.isValid then
-            return superFunc(self, ...)
-        end
-        return
-    end)
-
 -- disable lowering trailer when is lifted and player leaves vehicle
 Trailer.onDischargeStateChanged = Utils.overwrittenFunction(Trailer.onDischargeStateChanged,
     function(self, superFunc, dischargeState, ...)
